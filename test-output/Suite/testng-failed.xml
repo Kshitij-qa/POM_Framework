@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <listeners>
+    <listener class-name="listeners.ExtentListeners"/>
+  </listeners>
+  <test thread-count="5" name="placeOrder(failed)">
+    <classes>
+      <class name="rough.rough">
+        <methods>
+          <include name="placeOrder"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- rough.rough -->
+    </classes>
+  </test> <!-- placeOrder(failed) -->
+</suite> <!-- Failed suite [Suite] -->

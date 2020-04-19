@@ -1,0 +1,7 @@
+20:48:13.120 [main] DEBUG base.BasePage - Typing in an Element : password_ID entered value as : P@ssw0rd
+20:49:42.381 [main] DEBUG base.BasePage - Clicking on an Element : submit_ID
+20:49:58.357 [main] DEBUG base.BasePage - Clicking on an Element : accounts_tab_XPATH
+20:50:18.703 [main] DEBUG base.BasePage - Clicking on an Element : quick_filter_XPATH
+21:00:03.709 [main] DEBUG base.BasePage - Config file loaded !!!
+21:00:03.712 [main] DEBUG base.BasePage - OR file loaded !!!
+21:00:15.600 [main] DEBUG base.BasePage - Navigated to : http://clientworksqa.lpl.com/

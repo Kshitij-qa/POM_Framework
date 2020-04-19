@@ -1,0 +1,6 @@
+19:22:54.747 [main] DEBUG base.BasePage - Navigated to : http://clientworksqa.lpl.com/
+19:22:57.211 [main] DEBUG base.BasePage - Typing in an Element : usename_ID entered value as : vaishali.zachrich
+19:22:57.314 [main] DEBUG base.BasePage - Typing in an Element : password_ID entered value as : P@ssw0rd
+19:23:12.423 [main] DEBUG base.BasePage - Clicking on an Element : submit_ID
+19:23:28.025 [main] DEBUG base.BasePage - Clicking on an Element : accounts_tab_XPATH
+19:23:48.795 [main] DEBUG base.BasePage - Typing in an Element : account_search_box_XPATH entered value as : 84500628

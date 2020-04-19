@@ -1,0 +1,6 @@
+20:02:07.971 [main] DEBUG base.BasePage - Clicking on an Element : quick_filter_XPATH
+20:03:57.479 [main] DEBUG base.BasePage - Config file loaded !!!
+20:03:57.483 [main] DEBUG base.BasePage - OR file loaded !!!
+20:04:08.623 [main] DEBUG base.BasePage - Navigated to : http://clientworksqa.lpl.com/
+20:04:11.045 [main] DEBUG base.BasePage - Typing in an Element : usename_ID entered value as : vaishali.zachrich
+20:04:11.197 [main] DEBUG base.BasePage - Typing in an Element : password_ID entered value as : P@ssw0rd

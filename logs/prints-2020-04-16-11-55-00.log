@@ -1,0 +1,7 @@
+11:44:40.808 [main] DEBUG base.BasePage - Clicking on an Element : quick_filter_XPATH
+11:51:34.904 [main] DEBUG base.BasePage - Config file loaded !!!
+11:51:34.908 [main] DEBUG base.BasePage - OR file loaded !!!
+11:51:42.397 [main] DEBUG base.BasePage - Navigated to : https://usability.com.au/2005/06/table-test-page/
+11:53:23.859 [main] DEBUG base.BasePage - Config file loaded !!!
+11:53:23.862 [main] DEBUG base.BasePage - OR file loaded !!!
+11:53:30.228 [main] DEBUG base.BasePage - Navigated to : https://usability.com.au/2005/06/table-test-page/

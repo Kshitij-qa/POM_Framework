@@ -1,0 +1,6 @@
+20:40:43.472 [main] DEBUG base.BasePage - OR file loaded !!!
+20:40:53.324 [main] DEBUG base.BasePage - Navigated to : http://clientworksqa.lpl.com/
+20:40:55.793 [main] DEBUG base.BasePage - Typing in an Element : usename_ID entered value as : vaishali.zachrich
+20:40:55.896 [main] DEBUG base.BasePage - Typing in an Element : password_ID entered value as : P@ssw0rd
+20:42:08.862 [main] DEBUG base.BasePage - Clicking on an Element : submit_ID
+20:49:43.894 [main] DEBUG base.BasePage - Config file loaded !!!

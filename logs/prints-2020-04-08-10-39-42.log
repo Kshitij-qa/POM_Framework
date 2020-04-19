@@ -1,0 +1,6 @@
+21:08:55.079 [main] DEBUG base.BasePage - Typing in an Element : usename_ID entered value as : vaishali.zachrich
+21:08:55.238 [main] DEBUG base.BasePage - Typing in an Element : password_ID entered value as : P@ssw0rd
+21:10:31.253 [main] DEBUG base.BasePage - Clicking on an Element : submit_ID
+21:10:49.751 [main] DEBUG base.BasePage - Clicking on an Element : accounts_tab_XPATH
+21:11:10.108 [main] DEBUG base.BasePage - Clicking on an Element : quick_filter_XPATH
+10:39:42.864 [main] DEBUG base.BasePage - Config file loaded !!!
