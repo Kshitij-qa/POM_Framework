@@ -25,7 +25,8 @@ public class rough extends BasePage {
 		ap.gotoAccounts();
 		ap.placeOrder();
 	
-
+// update code
+		ap.keyboardKey("Enter");
 }
 		
 
