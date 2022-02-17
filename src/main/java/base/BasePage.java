@@ -329,6 +329,38 @@ public void highlight(String locator) {
 			}
 
 	}
+	
+		public static void coutOfElement(String locator){
+			int coutn = 0;
+		
+		if(locator.endsWith("_XPATH")){
+			count = driver.findElement(By.xpath(OR.getProperty(locator))).size();
+
+		}
+
+	}
+	public static void webDriverWait(String locator){
+		WebDriverWait wait = new WebDriverWait(driver,20);
+		if(locator.endsWith("_XPATH")){
+			wait.until(ExpectedCondition.elementToBeClickable(driver.findElement(By.xpath(OR.getProperty(locator)))));
+
+		}
+
+	}
+
+	public static void selectElementByVisibleText(String locator, String value) throws InterruptedException {
+		 List<WebElement> lstElement = null;
+		 if(locator.endsWith("_XPATH")){
+			 lstElement=driver.findElements(By.xpath(OR.getProperty(locator)));
+			 if(lstElement.size()>0){
+				 webDriverWait(locator);
+				 Select objSelect = new Select(lstElement.get(0));
+				 objSelect.selectByVisibleText(value);
+				 Thread.sleep(3000);
+			 }
+		 }
+
+
 
 
 
