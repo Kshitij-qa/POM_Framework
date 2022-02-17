@@ -316,6 +316,20 @@ public void highlight(String locator) {
 	action.sendKeys(Keys.ENTER).perform();
 	element.sendKeys(Keys.ENTER);
 }
+	public static void saveFileAsText(String fileText, String fileName){
+
+		StringBuffer sbText = new StringBuffer(fileText);
+
+		String strFile = System.getProperty("user.dir")+"//Output//"+fileName+".txt";
+
+		try {
+			FileUtils.writeStringToFile(new File(strFile),sbText.toString(),"UTF-8");
+		}catch (Exception e){
+				e.printStackTrace();
+			}
+
+	}
+
 
 
 }
