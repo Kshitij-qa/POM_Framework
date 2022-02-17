@@ -154,6 +154,25 @@ public class BasePage {
 		driver.quit();
 
 	}
+	
+	
+public static void copyTestDataFile() throws Exception{
+		String path = System.getProperty("user.dir") + "//Output//";
+		File f = new File(path);
+		f.mkdir();
+		File source = new File(System.getProperty("user.dir")+"InputFile.xlsx");
+		String strResultFile = System.getProperty("user.dir")+"//Output//output.xlsx";
+		File dest = new File(strResultFile);
+		boolean copyInputDataFileFlag = dest.exists();
+		if(!copyInputDataFileFlag){
+			FileUtils.copyFile(source,dest);
+			System.out.println("FIle copied");
+		}else
+		{
+			System.out.println("File already exist");
+		}
+}
+
 
 	// Common Keywords
 	public static void object_Click(String locator) {
