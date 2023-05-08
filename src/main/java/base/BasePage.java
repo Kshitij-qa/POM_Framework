@@ -1,12 +1,16 @@
 package base;
 
+import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
+
+import org.apache.commons.io.FileUtils;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -24,6 +28,7 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -350,10 +355,10 @@ public void highlight(String locator) {
 	}
 	
 		public static void coutOfElement(String locator){
-			int coutn = 0;
+			int count = 0;
 		
 		if(locator.endsWith("_XPATH")){
-			count = driver.findElement(By.xpath(OR.getProperty(locator))).size();
+			count = driver.findElements(By.xpath(OR.getProperty(locator))).size();
 
 		}
 
@@ -361,26 +366,25 @@ public void highlight(String locator) {
 	public static void webDriverWait(String locator){
 		WebDriverWait wait = new WebDriverWait(driver,20);
 		if(locator.endsWith("_XPATH")){
-			wait.until(ExpectedCondition.elementToBeClickable(driver.findElement(By.xpath(OR.getProperty(locator)))));
+			wait.until(ExpectedConditions.elementToBeClickable(driver.findElement(By.xpath(OR.getProperty(locator)))));
 
 		}
 
 	}
 
 	public static void selectElementByVisibleText(String locator, String value) throws InterruptedException {
-		 List<WebElement> lstElement = null;
-		 if(locator.endsWith("_XPATH")){
-			 lstElement=driver.findElements(By.xpath(OR.getProperty(locator)));
-			 if(lstElement.size()>0){
-				 webDriverWait(locator);
-				 Select objSelect = new Select(lstElement.get(0));
-				 objSelect.selectByVisibleText(value);
-				 Thread.sleep(3000);
-			 }
-		 }
+		List<WebElement> lstElement = null;
+		if (locator.endsWith("_XPATH")) {
+			lstElement = driver.findElements(By.xpath(OR.getProperty(locator)));
+			if (lstElement.size() > 0) {
+				webDriverWait(locator);
+				Select objSelect = new Select(lstElement.get(0));
+				objSelect.selectByVisibleText(value);
+				Thread.sleep(3000);
+			}
+		}
 
 
-
-
+	}
 
 }

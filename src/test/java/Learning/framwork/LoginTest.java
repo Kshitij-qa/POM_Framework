@@ -21,6 +21,7 @@ public class LoginTest extends BaseTest{
 		String pwd= data.get("password");
 		LoginPage lp = new LoginPage();
 		lp.doLogin(un, pwd);
+
 		
 	
 		//Assert.fail("Login test failed");
@@ -29,10 +30,10 @@ public class LoginTest extends BaseTest{
 		
 
 @AfterMethod
+
 @AfterTest
 public void tearDown() {
-
-
+driver.quit();
 }
 	
 	

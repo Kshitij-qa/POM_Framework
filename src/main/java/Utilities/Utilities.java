@@ -63,7 +63,20 @@ public class Utilities extends BasePage{
 		return data;
 
 	}
-	
+
+
+	public Object[][] getMoreData(Method m){
+
+		String sheetName = m.getName();
+
+		int rows = excel.getRowCount(sheetName);
+		int cols = excel.getColumnCount(sheetName);
+		System.out.println(rows);
+		Object[][] data = new Object[rows - 1][1];
+		Hashtable<String,String> data1 = null;
+
+		return data;
+	}
 	
 	public static boolean isTestRunnable(String testName, ExcelReader excel){
 		

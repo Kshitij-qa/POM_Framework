@@ -18,8 +18,14 @@
     <classes>
       <class name="rough.rough"/>
     </classes>
-  </test> <!-- Test -->  
- 
- 
-  
+  </test> <!-- Test -->
+
+    <test name="testCucu">
+        <classes>
+            <class name="cucu.CalculatorTestRunner"/>
+        </classes>
+    </test> <!-- Test -->
+
+
+
 </suite> <!-- Suite -->

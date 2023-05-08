@@ -9,4 +9,6 @@ public class BaseTest extends BasePage{
 	public void quit() {
 		//driver.quit();
 	}
+
+
 }
